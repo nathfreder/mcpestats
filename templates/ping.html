@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ping {{ fulladdress }}</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Ping ID:</th>
+        <td>{{ data.ping_id }}</td>
+    </tr>
+    <tr>
+        <th>Server ID:</th>
+        <td>{{ data.server_id }}</td>
+    </tr>
+    <tr>
+        <th>Game ID:</th>
+        <td>{{ data.game_id }}</td>
+    </tr>
+    <tr>
+        <th>Server Name:</th>
+        <td>{{ data.server_name }} <a href="https://motd-generator.nathfreder.dev/?motd= {{ data.motd | urlencode }}">Open in MOTD Generator</a></td>
+    </tr>
+    <tr>
+        <th>Game Protocol:</th>
+        <td>{{ data.game_protocol }}</td>
+    </tr>
+    <tr>
+        <th>Game Version:</th>
+        <td>{{ data.game_version }}</td>
+    </tr>
+    <tr>
+        <th>Current Players:</th>
+        <td>{{ data.num_players }}</td>
+    </tr>
+    <tr>
+        <th>Max Players:</th>
+        <td>{{ data.max_players }}</td>
+    </tr>
+    <tr>
+        <th>Hash Code:</th>
+        <td>{{ data.hash_code }}</td>
+    </tr>
+    <tr>
+        <th>MOTD:</th>
+        <td>{{ data.motd }}</td>
+    </tr>
+    <tr>
+        <th>Gamemode:</th>
+        <td>{{ data.gamemode }}</td>
+    </tr>
+</table>
+</body>
+</html>
